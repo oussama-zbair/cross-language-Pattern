@@ -1,0 +1,3 @@
+To use this singleton class, you can simply call Singleton.getInstance() to get the instance of the singleton. The first time this method is called, it will create a new instance of the Singleton class. Every subsequent call to getInstance() will return the same instance.
+
+I use a technique called "lazy initialization" to create the singleton instance only when it is needed, rather than creating it at the time the Singleton class is loaded. This can be useful if the singleton instance is expensive to create, or if it is not used in every part of the application.

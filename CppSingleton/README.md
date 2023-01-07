@@ -1,0 +1,5 @@
+This code defines a class called Singleton which has a private constructor, preventing other code from creating instances of the class directly. Instead, the getInstance() method is provided to allow other code to obtain an instance of the Singleton class. This method uses a technique called "lazy initialization" to create a new instance of the Singleton class only if one does not already exist. If an instance has already been created, the getInstance() method simply returns the existing instance.
+
+The instance of the Singleton class is stored as a static member variable of the Singleton class, and is initialized to nullptr when the class is first loaded. This ensures that the instance will be created only when it is needed, rather than at the time the Singleton class is loaded.
+
+This implementation of the singleton pattern ensures that there is only one instance of the Singleton class in the application, and provides a simple way for other code to access that instance.
